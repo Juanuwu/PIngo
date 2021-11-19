@@ -1,10 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
 
-
-
-
-
 function App(props) {
 
 
@@ -12,8 +8,8 @@ function App(props) {
 
     return (
         <div className="col">
-            <h1>Mi Casa</h1>
-            <p>This is my house y&apos;all!</p>
+            <h1>pingo</h1>
+            <p>luis pingo</p>
             {tasks.map(task => <div>{task.data + "\n" + task._id}</div>)}
         </div>
     );
