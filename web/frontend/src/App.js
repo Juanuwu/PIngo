@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import './App.css';
 
 function App(props) {
 
@@ -9,7 +10,8 @@ function App(props) {
         <div className="col">
             <h1>pingo</h1>
             <p>luis pingo</p>
-            {tasks.map(task => <div>{task.data + "\n" + task._id}</div>)}
+            {tasks.map(task => <div className="chain">{task.data + "\n" + task._id} <hr className="dashed"/> </div>)}
+
         </div>
     );
 
