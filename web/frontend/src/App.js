@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import axios from "axios";
 
 function App(props) {
 
@@ -15,6 +14,5 @@ function App(props) {
     );
 
 }
-
 
     export default App;

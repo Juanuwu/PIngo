@@ -7,6 +7,7 @@ import axios from "axios";
 
 function getRQ() {
     axios.get('/api/todos').then(function (result) {
+
         doSomething(result.data);
         console.log(result.data)
     });
