@@ -31,14 +31,13 @@ class GeekCoinBlock:
 
         self.previous_block_hash = previous_block_hash
         self.transaction_list = transaction_list
-
         item_1 = {
-            "data" : transaction_list.join(previous_block_hash),
+            "data" : self.transaction_list + " " + self.previous_block_hash
                  }
         self.block_data = item_1
         self.block_hash = hashlib.sha256(str(self.block_data).encode()).hexdigest()
         item_1 = {
-            "data" : transaction_list.join(previous_block_hash),
+            "data" : self.transaction_list + " " + self.previous_block_hash,
             "_id" :  self.block_hash
                  }
         try:
@@ -83,10 +82,10 @@ app = Flask(__name__)
 @app.route('/api/todos/')
 def hello_flask():
 
-    t1 = "jorge pablo compra un pingo de enefete que le hace captura a la casa"
-    t2 = "jorge pablo compra un pingo de enefete que le hace captura a la casa"
+    t1 = "uno dos tres"
+    t2 = "cuato cinco seis"
     
-
+    
     myblockchain.create_block_from_transaction(t1)
     myblockchain.create_block_from_transaction(t2)
     results = myblockchain.display_chain()
