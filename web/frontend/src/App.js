@@ -10,7 +10,7 @@ function App(props) {
         <div className="col">
             <h1>pingo</h1>
             <p>luis pingo</p>
-            {tasks.map(task => <div className="chain">{task.data + "\n" + task._id} <hr className="dashed"/> </div>)}
+            {tasks.map(task => <div className="chain">{"Nombre:" + task.data + "\n" + "Hash:" + task._id + "\n"+ "Prev:" + task.prev} <hr className="dashed"/> </div>)}
 
         </div>
     );

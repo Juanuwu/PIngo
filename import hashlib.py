@@ -31,14 +31,15 @@ class GeekCoinBlock:
 
         self.previous_block_hash = previous_block_hash
         self.transaction_list = transaction_list
+        
         item_1 = {
-            "data" : self.transaction_list + " " + self.previous_block_hash
+            "data" : self.transaction_list + self.previous_block_hash
                  }
-        self.block_data = item_1
-        self.block_hash = hashlib.sha256(str(self.block_data).encode()).hexdigest()
+        self.block_hash = hashlib.sha256(str(item_1).encode()).hexdigest()
         item_1 = {
-            "data" : self.transaction_list + " " + self.previous_block_hash,
-            "_id" :  self.block_hash
+            "data" : self.transaction_list,
+            "prev" :  self.previous_block_hash,
+            "_id" : self.block_hash
                  }
         try:
             collection_name.insert(item_1)
@@ -84,7 +85,7 @@ def hello_flask():
 
     t1 = "uno dos tres"
     t2 = "cuato cinco seis"
-    
+    myblockchain.generate_genesis_block()
     
     myblockchain.create_block_from_transaction(t1)
     myblockchain.create_block_from_transaction(t2)
