@@ -86,7 +86,7 @@ def hello_flask():
 
     t1 = "uno dos tres"
     t2 = "cuato cinco seis"
-    myblockchain.generate_genesis_block()
+    #myblockchain.generate_genesis_block()  #Elimina cosas
     
     myblockchain.create_block_from_transaction(t1)
     myblockchain.create_block_from_transaction(t2)

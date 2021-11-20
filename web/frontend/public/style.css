@@ -24,7 +24,7 @@ section .leftBox{
 section .leftBox .content
 {
     position: relative;
-    right: -100px;
+    right: -200px;
     color: #fff;
     /*background: rgba(0, 0, 0, .5); */
     padding: 140px;
@@ -55,7 +55,7 @@ section .events
     float: right;
     box-sizing: border-box;
 }
-
+/*
 section .events ul
 {
     position: absolute;
@@ -65,7 +65,8 @@ section .events ul
     padding: 40px;
     box-sizing: border-box;
 
-}
+}*/
+/*
 section .events ul li
 {
     list-style: none;
@@ -73,47 +74,24 @@ section .events ul li
     box-sizing: border-box;
     height: 200px;
     margin: 15px 0;
-}
+}*/
 section .events ul li .time 
 {
     position: relative;
-    padding: 20px;
-    background: #262626;
-    box-sizing: border-box;
-    width: 30%;
-    height: 100%;
-    
+    box-sizing: border-box;    
     float: left;
     text-align: center;
     transition: .5s;
 }
-section .events ul li:hover .time
-{
-    background: #cc1414;
-}
-section .events ul li .time h2
-{
-    position: absolute;
-    margin: 0;
-    padding: 0;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    font-size: 60px;
-}
 
-section .events ul li .time h2 span
-{
-    font-size: 30px;
-}
+
 section .events ul li .details
 {
     padding: 5px;
-    background: #fff;
+    background: rgb(230, 230, 230);
     box-sizing: border-box;
-    width: 70%;
-    height: 100%;
+    width: 90%;
+    height: 00%;
     float: left;
 }
 section .events ul li .details h3
