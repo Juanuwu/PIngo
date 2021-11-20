@@ -12,6 +12,7 @@ function App(props) {
             <p>luis pingo</p>
             {tasks.map(task => <div className="chain">{"Nombre:" + task.data + "\n" + "Hash:" + task._id + "\n"+ "Prev:" + task.prev} <hr className="dashed"/> </div>)}
 
+
         </div>
     );
 

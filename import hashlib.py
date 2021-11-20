@@ -4,7 +4,7 @@ from pymongo import MongoClient
 import json
 import flask
 from flask import Flask
-
+from flask_cors import CORS, cross_origin
 
 
 
@@ -79,6 +79,7 @@ class Blockchain:
 myblockchain = Blockchain()        
 
 app = Flask(__name__)
+CORS(app, support_credentials=True)
 
 @app.route('/api/todos/')
 def hello_flask():
@@ -98,7 +99,7 @@ def hello_flask():
 
 
 if __name__ == '__main__':
-   app.run()
+   app.run(host='0.0.0.0', port=5000)
 
         
 
