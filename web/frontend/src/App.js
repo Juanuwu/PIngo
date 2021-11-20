@@ -5,23 +5,20 @@ const MyApp = {};
 
 function getRQ() {
     axios.get('/api/todos').then(function (result) {
-
-
-        console.log(result.data)
         MyApp.data = result.data
     });
 }
 getRQ()
-function App() {
+function App(props) {
 
     var numero = 0
     numero = numero + 1
 
     return (
-        <div className="col"> 
+
+        <div className="col">
             {MyApp.data.map(task =>
-                
-            <div class="events">{"Nombre:\n" + task.data + "\n" + "Hash:" + task._id + "\n"+ "Prev:" + task.prev + "\n"+" Tipo: " + numero}  <hr className="dashed"/> </div>)
+            <div class="chain">{"Nombre:\n" + task.data + "\n" + "Hash:" + task._id + "\n"+ "Prev:" + task.prev + "\n"+" Tipo: " + numero}  <hr className="dashed"/> </div>)
             }
         </div>
     );
