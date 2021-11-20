@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import './index';
-import axios from "axios";
 const MyApp = {};
 
 function App(props) {
