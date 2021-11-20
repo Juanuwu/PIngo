@@ -3,14 +3,8 @@ import './index';
 import axios from "axios";
 const MyApp = {};
 
-function getRQ() {
-    axios.get('/api/todos').then(function (result) {
-        MyApp.data = result.data
-    });
-}
-getRQ()
 function App(props) {
-
+    MyApp.data = props.tasks
     var numero = 0
     numero = numero + 1
 
