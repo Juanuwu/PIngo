@@ -11,12 +11,14 @@ section
 {
     position: relative;
     display: flex;
+    height:30%;
 
 }
 body
 {
 
     display: flex;
+
     background-color: #1b192f;
     color: #f8f4f9;
 }
@@ -84,10 +86,13 @@ body
 {
     .card
     {
+        display: inline-block;
         position: relative;
         width: 50%;
+        width: 10px;
         transition: 0.5s;
         align-items: flex-start;
+        height:auto;
     }
     .card:hover
     {
@@ -105,7 +110,7 @@ body
         padding: 40px;
     }
 }
-@media (max-width: 1080px)
+@media (max-width: 300px)
 {
     .card .content
     {
