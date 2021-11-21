@@ -89,7 +89,7 @@ body
     .card img
     {
         position: relative;
-        transform: translateX(-50%);
+        transform: translateX(-70%);
         height: 30rem;
         transition: 0.5s;
     }
