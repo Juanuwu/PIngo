@@ -84,12 +84,21 @@ body
 }
 @media (max-width: 1080px)
 {
-    
+    .card img
+    {
+        position: relative;
+        left: 0%;
+        transform: translateX(-50%);
+
+        height: 20rem;
+        transition: 0.5s;
+    }
+
     .card
     {
-        display: inline-block;
+        display:flex;
         position: relative;
-        width: 20%;
+        width: 50%;
         transition: 0.5s;
         height:100rem;
     }
@@ -99,13 +108,13 @@ body
     }
     .card:hover img
     {
-        left: 0%;
+        left: 10%;
         height: 50rem;
     }
     .card .content
     {
         width: 100%;
-        left: 0;
+        right: 50rem;
         padding: 40px;
     }
 }
