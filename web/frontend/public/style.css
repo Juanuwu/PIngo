@@ -92,6 +92,18 @@ body
 }
 @media (max-width: 991px)
 {
+<<<<<<< HEAD
+=======
+
+    .card img
+    {
+        position: relative;
+        transform: translateX(-70%);
+        height: 30rem;
+        transition: 0.5s;
+    }
+
+>>>>>>> bb87a1478c4bb3225e4ff98dafcc0c141c276271
     .card
     {
         position: relative;
