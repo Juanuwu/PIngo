@@ -92,18 +92,6 @@ body
 }
 @media (max-width: 991px)
 {
-<<<<<<< HEAD
-=======
-
-    .card img
-    {
-        position: relative;
-        transform: translateX(-70%);
-        height: 30rem;
-        transition: 0.5s;
-    }
-
->>>>>>> bb87a1478c4bb3225e4ff98dafcc0c141c276271
     .card
     {
         position: relative;
@@ -127,6 +115,10 @@ body
         left: 0;
         padding: 40px;
     }
+    .box
+    {
+      visibility: hidden;
+    }
 }
 @media (max-width: 420px)
 {
@@ -137,6 +129,19 @@ body
     .card:hover img
     {
         height: 300px;
+    }
+    .box  /*no toques nada Juan*/
+    {
+        
+        visibility: hidden;
+        position: fixed;
+        top: 20px;
+        right: 80px;
+        filter: blur(100px);
+        width: 200px;
+        border-bottom: 20px solid #03a9f4;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
     }
 }
 .container {
@@ -250,7 +255,6 @@ body
     border-bottom: 20px solid #03a9f4;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    
 }
 .box h2
 {
@@ -327,3 +331,4 @@ body
     font-weight: 6000;
 
 }
+
