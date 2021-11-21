@@ -34,6 +34,7 @@
     ]
   },
   "devDependencies": {
-    "immer": "^9.0.6"
+    "immer": "^9.0.6",
+	"ansi-html-community": "0.0.8"
   }
 }
