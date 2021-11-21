@@ -5,15 +5,13 @@ var film;
 
 function App(props) {
     MyApp.data = props.tasks
-    var numero = 0
-    numero = numero + 1
 
     return (
 
         <div className="col">
             {film = MyApp.data.slice(0, 10).map((task) =>
 
-            <div class="chain">{task.data + "\n" + "Hash:"  + task._id + "\n"+ "Prev:" + task.prev + "\n"+" Tipo: " + numero}  <hr className="dashed"/> </div>)
+            <div class="chain">{task.data + "\n" + "Hash:"  + task._id}  <hr className="dashed"/> </div>)
             }
         </div>
     );
@@ -40,7 +38,7 @@ function getResults(){
             ){
                 selectElement('.search-results').innerHTML+=`
                 <div class = "search-results-item">
-                    <span class= "search-item">${"Nombre: " + task.data + "\n" + " Hash: " + task._id}</span>
+                    <span class= "search-item">${"Nombre: " + task.data + "\n" + " Hash: " + task._id + "\n" + "Prev: " + task.prev}</span>
                 </div>
                 `;
             }
