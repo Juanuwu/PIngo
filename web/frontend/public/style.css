@@ -12,6 +12,7 @@ section
     position: relative;
     display: flex;
     height:80%;
+    justify-content: center;
 
 }
 body
@@ -84,12 +85,19 @@ body
 }
 @media (max-width: 1080px)
 {
+    section
+    {
+        position: relative;
+        display: flex;
+        height:50%;
+
+
+    }
     .card img
     {
         position: relative;
         left: 0%;
         transform: translateX(-50%);
-
         height: 20rem;
         transition: 0.5s;
     }
