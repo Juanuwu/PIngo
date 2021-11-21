@@ -32,6 +32,7 @@ body
     width: 600px;
     height: 350px;
     margin: 20px;
+    left: 80px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -90,15 +91,17 @@ body
     margin-top: 10px;
     text-decoration: none;
 }
-@media (max-width: 991px)
+@media (max-width: 991px) /*Baja resolucion______________________*/
 {
     .card
     {
         position: relative;
+        left: 70px;
         width: auto;
         max-width: 600px;
         transition: 0.5s;
         align-items: flex-start;
+        
     }
     .card:hover
     {
@@ -117,33 +120,11 @@ body
     }
     .box
     {
-      visibility: hidden;
+      visibility: visible;
     }
 }
-@media (max-width: 420px)
-{
-    .card .content
-    {
-        padding: 30px;
-    }
-    .card:hover img
-    {
-        height: 300px;
-    }
-    .box  /*no toques nada Juan*/
-    {
-        
-        visibility: hidden;
-        position: fixed;
-        top: 20px;
-        right: 80px;
-        filter: blur(100px);
-        width: 200px;
-        border-bottom: 20px solid #03a9f4;
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-    }
-}
+
+
 .container {
     max-width: 120rem;
     margin: 0 auto;
@@ -167,12 +148,13 @@ body
 
   input[type="text"]:focus {
     border: none;
-    outline-color: #bdbdbd;
+    outline-color: #000000;
   }
 
   .searchbar {
     max-width: 25rem;
-    margin-bottom: 5rem;
+    margin-bottom: 1rem;
+    
   }
 
   .search-results {
@@ -195,7 +177,7 @@ body
   }
 
   .search-item:last-child {
-    margin-bottom: 0;
+    margin-bottom: 1px 1px;
   }
 
   /* width */
@@ -247,11 +229,11 @@ body
     background-position: center center;
     background-attachment: fixed;
 
-    position: fixed;
+    position: relative;
     top: 20px;
     right: 80px;
-    
-    width: 200px;
+    left: 200px;
+    width: 270px;
     border-bottom: 20px solid #03a9f4;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -328,7 +310,95 @@ body
   
   text-align: center;
   font-size: 12px;
-    font-weight: 6000;
+  font-weight: 6000;
 
 }
 
+@media (min-width: 1920px) /*Pantalla hd_____________________________________________________________________*/
+{
+
+    .box 
+    {
+
+      background-size: cover;
+      background-position: center center;
+      background-attachment: fixed;
+  
+      position: relative;
+      top: 20px;
+      right: 80px;
+      left: 400px;
+      
+      width: 350px;
+      border-bottom: 20px solid #03a9f4;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+    .divTabla {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      word-break:break-all;
+      white-space:pre-line;
+      height:50rem;
+      
+      text-align: center;
+      font-size: 15px;
+      font-weight: 6000;
+    
+    }
+    .box ul li
+    {
+        list-style: none;
+        padding: 5px;
+        width: 100%;
+        background: rgb(41, 41, 41);
+        box-shadow: 0 5px 25px rgba(0, 0, 0,.1);
+        transition: transform 0.5s;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    .card
+    {
+        position: relative;
+        width: 600px;
+        height: 350px;
+        margin: 20px;
+        left: 180px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        border-radius: 20px;
+        background: linear-gradient(135deg,#211ed4,#29c914);
+    }
+}
+
+@media (max-width: 420px)
+{
+    .card .content
+    {
+        padding: 30px;
+    }
+    .card:hover img
+    {
+        height: 300px;
+    }
+    .card
+    {
+        position: relative;
+        left: 140px;
+        width: 300px;
+        max-width: 600px;
+        transition: 0.5s;
+        align-items: flex-start;
+        
+    }
+    .container {
+      max-width: 20rem;
+      margin: 0 auto;
+      padding: 1.5rem;
+      text-align: center;
+    }
+    
+}
