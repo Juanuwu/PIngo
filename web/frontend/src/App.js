@@ -5,8 +5,6 @@ var film;
 
 function App(props) {
     MyApp.data = props.tasks
-    var numero = 0
-    numero = numero + 1
 
     return (
 
@@ -40,7 +38,7 @@ function getResults(){
             ){
                 selectElement('.search-results').innerHTML+=`
                 <div class = "search-results-item">
-                    <span class= "search-item">${"Nombre: " + task.data + "\n" + " Hash: " + task._id}</span>
+                    <span class= "search-item">${"Nombre: " + task.data + "\n" + " Hash: " + task._id + "\n" + "Prev: " + task.prev}</span>
                 </div>
                 `;
             }
