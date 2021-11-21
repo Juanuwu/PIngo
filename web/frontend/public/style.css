@@ -172,6 +172,9 @@ section .events ul li .details a:hover
     padding: 1rem;
     border-radius: 0.8rem;
     animation: fadeIn 0.5s ease-in-out;
+      overflow: hidden;
+      word-break:break-all;
+      white-space:pre-line;
   }
   
   .search-item {
