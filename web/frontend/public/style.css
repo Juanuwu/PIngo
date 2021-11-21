@@ -80,12 +80,12 @@ body
     margin-top: 10px;
     text-decoration: none;
 }
-@media (max-width: 1080px)
+@media (max-width: 300px)
 {
     .card
     {
         position: relative;
-        width: auto;
+        width: 50%;
         transition: 0.5s;
         align-items: flex-start;
     }
