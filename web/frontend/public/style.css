@@ -228,10 +228,10 @@ body
 
 .box
 {
-    position: fixed;
-    bottom: 010;
-    right: 120px;
-    width: 200px;
+    position: relative;
+    bottom: 50rem;
+    right: 0rem;
+    width: 29rem;
     border-bottom: 20px solid #03a9f4;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -254,8 +254,8 @@ body
 .box ul li
 {
     list-style: none;
-    padding: 10px;
-    width: 100%;
+    padding: 15px;
+    width: 150%;
     background: rgb(41, 41, 41);
     box-shadow: 0 5px 25px rgba(0, 0, 0,.1);
     transition: transform 0.5s;
@@ -278,8 +278,8 @@ body
 }
 .box ul li span
 {
-    width: 20px;
-    height: 20px;
+    width: 1rem;
+    height: 1rem;
     text-align: center;
     line-height: 20px;
     background: #25bcff;
@@ -298,8 +298,11 @@ body
 }
 
 .divTabla {
-  width: 1000px;
+  width: 100rem;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+
+    word-break:break-all;
+    white-space:pre-line;
 }
