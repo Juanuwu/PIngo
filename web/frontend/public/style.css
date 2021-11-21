@@ -83,22 +83,14 @@ body
     margin-top: 10px;
     text-decoration: none;
 }
-@media (max-width: 1080px)
+@media (max-width: 1080px )
 {
-    section
-    {
-        position: relative;
-        display: flex;
-        height:50%;
 
-
-    }
     .card img
     {
         position: relative;
-        left: 0%;
         transform: translateX(-50%);
-        height: 20rem;
+        height: 30rem;
         transition: 0.5s;
     }
 
@@ -108,7 +100,7 @@ body
         position: relative;
         width: 50%;
         transition: 0.5s;
-        height:100rem;
+        height:30rem;
     }
     .card:hover
     {
