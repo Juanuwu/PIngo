@@ -1,6 +1,7 @@
 import React from "react";
 import './index';
 const MyApp = {};
+var film;
 
 function App(props) {
     MyApp.data = props.tasks
@@ -10,7 +11,8 @@ function App(props) {
     return (
 
         <div className="col">
-            {MyApp.data.map(task =>
+            {film = MyApp.data.slice(0, 10).map((task) =>
+
             <div class="chain">{task.data + "\n" + "Hash:"  + task._id + "\n"+ "Prev:" + task.prev + "\n"+" Tipo: " + numero}  <hr className="dashed"/> </div>)
             }
         </div>
