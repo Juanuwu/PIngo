@@ -10,34 +10,41 @@
 section
 {
     position: relative;
+    width: 100%;
+    min-height: 100vh;
     display: flex;
-    height:55rem;
     justify-content: center;
-
+    align-items: center;
 }
+
 body
 {
-
     display: flex;
-
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
     background-color: #1b192f;
     color: #f8f4f9;
 }
 .card
 {
-
-    width: 30%;
-    margin: 10px;
+    position: relative;
+    width: 600px;
+    height: 350px;
+    margin: 20px;
     display: flex;
+    justify-content: flex-start;
+    align-items: center;
     border-radius: 20px;
     background: linear-gradient(135deg,#211ed4,#29c914);
 }
 .card img
 {
-    position: relative;
-    left: 0%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
     transform: translateX(-50%);
-    height: 20rem;
+    height: 400px;
     transition: 0.5s;
 }
 .card:hover img
@@ -45,11 +52,11 @@ body
     left: 80%;
     height: 500px;
 }
-
 .card .content
 {
     position: relative;
     width: 50%;
+    left: 20%;
     padding: 20px 20px 20px 40px;
     opacity: 0;
     visibility: hidden;
@@ -59,7 +66,7 @@ body
 {
     opacity: 1;
     visibility: visible;
-
+    left: 0%;
 }
 .card .content h2
 {
@@ -83,43 +90,45 @@ body
     margin-top: 10px;
     text-decoration: none;
 }
-@media (max-width: 1080px )
+@media (max-width: 991px)
 {
-
-    .card img
-    {
-        position: relative;
-        transform: translateX(-50%);
-        height: 30rem;
-        transition: 0.5s;
-    }
-
     .card
     {
-        display:flex;
         position: relative;
-        width: 50%;
+        width: auto;
+        max-width: 600px;
         transition: 0.5s;
-        height:30rem;
+        align-items: flex-start;
     }
     .card:hover
     {
-        height: 100rem;
+        height: 600px;
     }
     .card:hover img
     {
-        left: 10%;
-        height: 50rem;
+        left: 50%;
+        height: 350px;
     }
     .card .content
     {
         width: 100%;
-        right: 50rem;
+        left: 0;
         padding: 40px;
     }
 }
-
+@media (max-width: 420px)
+{
+    .card .content
+    {
+        padding: 30px;
+    }
+    .card:hover img
+    {
+        height: 300px;
+    }
+}
 .container {
+    max-width: 120rem;
     margin: 0 auto;
     padding: 1.5rem;
     text-align: center;
@@ -131,7 +140,7 @@ body
   }
 
   input[type="text"] {
-
+    width: 100%;
     padding: 0.8rem 0.5rem;
     background-color: #0d0c1d;
     border: none;
@@ -145,7 +154,7 @@ body
   }
 
   .searchbar {
-
+    max-width: 25rem;
     margin-bottom: 5rem;
   }
 
@@ -161,9 +170,6 @@ body
     padding: 1rem;
     border-radius: 0.8rem;
     animation: fadeIn 0.5s ease-in-out;
-      overflow: hidden;
-      word-break:break-all;
-      white-space:pre-line;
   }
 
   .search-item {
@@ -177,7 +183,7 @@ body
 
   /* width */
   ::-webkit-scrollbar {
-    width: 1rem;
+    width: 10px;
   }
 
   /* Track */
@@ -211,22 +217,28 @@ body
     margin: 4rem 0 2.5rem;
   }
 
-  @media screen and (max-width: 1080px) {
+  @media screen and (min-width: 2000px) {
       html {
           font-size: 92.5%;
         }
   }
 
 
-.box
+.box  /*no toques nada Juan*/
 {
-    position: relative;
-    bottom: 1rem;
-    right: 0rem;
-    width: 25%;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+
+    position: fixed;
+    top: 20px;
+    right: 80px;
+    
+    width: 200px;
     border-bottom: 20px solid #03a9f4;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    
 }
 .box h2
 {
@@ -246,7 +258,8 @@ body
 .box ul li
 {
     list-style: none;
-    padding: 15px;
+    padding: 5px;
+    width: 100%;
     background: rgb(41, 41, 41);
     box-shadow: 0 5px 25px rgba(0, 0, 0,.1);
     transition: transform 0.5s;
@@ -254,6 +267,7 @@ body
     text-overflow: ellipsis;
     overflow: hidden;
 }
+/*
 .box ul:hover li
 {
     opacity: 0.1;
@@ -262,14 +276,16 @@ body
 {
     transform: scale(1.1);
     z-index: 100;
-    background: #000000;
+    background: #25bcff;
     box-shadow: 0 5px 25px rgba(0, 0, 0,.2);
-    color: rgb(255, 247, 247);
+    color: #fff;
     opacity: 1;
 }
+*/
 .box ul li span
 {
-
+    width: 20px;
+    height: 20px;
     text-align: center;
     line-height: 20px;
     background: #25bcff;
@@ -286,12 +302,16 @@ body
     background: #fff;
     color: #25bcff;
 }
-
 .divTabla {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
   word-break:break-all;
-    white-space:pre-line;
-    height:50rem;
+  white-space:pre-line;
+  height:50rem;
+  
+  text-align: center;
+  font-size: 12px;
+    font-weight: 6000;
+
 }
