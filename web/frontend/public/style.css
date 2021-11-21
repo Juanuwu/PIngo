@@ -82,17 +82,16 @@ body
     margin-top: 10px;
     text-decoration: none;
 }
-@media (max-width: 300px)
+@media (max-width: 1080px)
 {
+    
     .card
     {
         display: inline-block;
         position: relative;
-        width: 50%;
-        width: 10px;
+        width: 20%;
         transition: 0.5s;
-        align-items: flex-start;
-        height:auto;
+        height:100rem;
     }
     .card:hover
     {
@@ -100,8 +99,8 @@ body
     }
     .card:hover img
     {
-        left: 50%;
-        height: 100rem;
+        left: 0%;
+        height: 50rem;
     }
     .card .content
     {
@@ -110,17 +109,7 @@ body
         padding: 40px;
     }
 }
-@media (max-width: 300px)
-{
-    .card .content
-    {
-        padding: 30px;
-    }
-    .card:hover img
-    {
-        height: 100rem;
-    }
-}
+
 .container {
     margin: 0 auto;
     padding: 1.5rem;
