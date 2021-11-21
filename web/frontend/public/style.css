@@ -233,7 +233,7 @@ body
     position: relative;
     bottom: 1rem;
     right: 0rem;
-    width: 29rem;
+    width: 45rem;
     border-bottom: 20px solid #03a9f4;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -257,7 +257,7 @@ body
 {
     list-style: none;
     padding: 15px;
-    width: 150%;
+    width: 100%;
     background: rgb(41, 41, 41);
     box-shadow: 0 5px 25px rgba(0, 0, 0,.1);
     transition: transform 0.5s;
