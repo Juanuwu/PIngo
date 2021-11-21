@@ -38,9 +38,7 @@ function getResults(){
             ){
                 selectElement('.search-results').innerHTML+=`
                 <div class = "search-results-item">
-                    <span class= "search-item">${task.data}</span>
-                    <span class= "search-item">${task.data}</span>
-                    <span class= "search-item">${task.data}</span>
+                    <span class= "search-item">${"Nombre: " + task.data + "\n" + " Hash: " + task._id}</span>
                 </div>
                 `;
             }
