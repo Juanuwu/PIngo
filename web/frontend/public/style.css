@@ -32,7 +32,6 @@ body
 .card img
 {
     position: relative;
-    bottom: 0;
     left: 0%;
     transform: translateX(-50%);
     height: 20rem;
@@ -81,13 +80,12 @@ body
     margin-top: 10px;
     text-decoration: none;
 }
-@media (max-width: 1080px)
+@media ()
 {
     .card
     {
         position: relative;
         width: auto;
-        max-width: 1080px;
         transition: 0.5s;
         align-items: flex-start;
     }
@@ -107,7 +105,7 @@ body
         padding: 40px;
     }
 }
-@media (max-width: 420px)
+@media ()
 {
     .card .content
     {
@@ -119,7 +117,6 @@ body
     }
 }
 .container {
-    max-width: 100rem;
     margin: 0 auto;
     padding: 1.5rem;
     text-align: center;
@@ -131,7 +128,7 @@ body
   }
 
   input[type="text"] {
-    width: 100%;
+
     padding: 0.8rem 0.5rem;
     background-color: #0d0c1d;
     border: none;
@@ -145,7 +142,7 @@ body
   }
 
   .searchbar {
-    max-width: 25rem;
+
     margin-bottom: 5rem;
   }
 
@@ -211,7 +208,7 @@ body
     margin: 4rem 0 2.5rem;
   }
 
-  @media screen and (min-width: 1920px) {
+  @media screen and () {
       html {
           font-size: 92.5%;
         }
@@ -247,7 +244,6 @@ body
 {
     list-style: none;
     padding: 15px;
-    width: 100%;
     background: rgb(41, 41, 41);
     box-shadow: 0 5px 25px rgba(0, 0, 0,.1);
     transition: transform 0.5s;
@@ -270,8 +266,7 @@ body
 }
 .box ul li span
 {
-    width: 1rem;
-    height: 1rem;
+
     text-align: center;
     line-height: 20px;
     background: #25bcff;
@@ -290,7 +285,6 @@ body
 }
 
 .divTabla {
-  width: 100rem;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
