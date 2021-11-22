@@ -23,14 +23,7 @@ function postRQ(valor) {
             console.log(error);
         });
 
-
-
-
     }
-
-
-
-
 
 
 
