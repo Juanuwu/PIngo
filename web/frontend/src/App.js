@@ -8,11 +8,13 @@ var film;
 
 function App(props) {
     MyApp.data = props.tasks
-
+    const lastIndex = MyApp.data.length - 10;
     return (
 
         <div className="col">
-            {film = MyApp.data.slice(0, 10).map((task) =>
+
+
+            {film = MyApp.data.slice(-10).reverse().map((task) =>
 
             <div class="chain">{task.data + "\n" + "Hash:"  + task._id }  <hr className="dashed"/> </div>)
             }
