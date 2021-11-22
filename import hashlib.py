@@ -8,14 +8,15 @@ from flask_cors import CORS, cross_origin
 from PIL import Image, ImageFont, ImageDraw 
 import os
 
-def gen_imagen():
+def gen_imagen(hash):
+
     abspath = os.path.abspath(__file__)
     dname = os.path.dirname(abspath)
     os.chdir(dname)
     my_image = Image.open('test/imagen/PINGO.png')
     title_font = ImageFont.truetype('test/imagen/font/Insominia.ttf', 20)
 
-    title_text = "3407c298c06a945d03aadd6993bbfc0b2f5e0772070d5c4e05c13197ec8d14d0"
+    title_text = hash
     image_editable = ImageDraw.Draw(my_image)
     image_editable.text((0,1900), title_text, (237, 230, 211), font=title_font)
     my_image.save('result.png')
@@ -56,8 +57,14 @@ class GeekCoinBlock:
                  }
         try:
             collection_name.insert(item_1)
+            self.imagen(self.block_hash)
+            
         except:
             print("error")
+    def imagen(self, hash):
+        gen_imagen(hash)
+
+
 
 class Blockchain:
     def __init__(self):
@@ -97,8 +104,7 @@ CORS(app, support_credentials=True)
 @app.route('/api/todos/')
 def hello_flask():
 
-    t1 = "uno dos tres"
-    t2 = "cuato cinco seis"
+    
     results = myblockchain.display_chain()
     
     return json.dumps(results)
