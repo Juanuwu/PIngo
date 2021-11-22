@@ -23,7 +23,7 @@ body
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #1b192f;
+    background: linear-gradient(135deg,#29c914,#211ed4);
     color: #f8f4f9;
 }
 .card
@@ -217,8 +217,8 @@ body
 
   .title {
     font-family: "Kaushan Script", cursive;
-    font-size: 10rem;
-    margin: 4rem 0 2.5rem;
+    font-size: 3rem;
+    margin: 0rem 0 2.5rem;
   }
 
   @media screen and (min-width: 2000px) {
@@ -346,11 +346,15 @@ body
 .form-container {
   max-width: 300px;
   padding: 10px;
-  background-color: #1b192f;
+  background: linear-gradient(135deg,#29c914,#211ed4);
+  border-radius: 20px;
+  -webkit-text-stroke: 0.6px black;
+  color: rgb(255, 255, 255); 
 }
 
 /* Full-width input fields */
 .form-container input[type=text], .form-container input[type=password] {
+  -webkit-text-stroke: 0px black;
   width: 100%;
   padding: 15px;
   margin: 5px 0 22px 0;
@@ -360,6 +364,7 @@ body
 
 /* When the inputs get focus, do something */
 .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  -webkit-text-stroke: 0px black;
   background-color: #ddd;
   outline: none;
 }
@@ -367,9 +372,10 @@ body
 /* Set a style for the submit/login button */
 .form-container .btn {
   background-color: #211ed4;
+  -webkit-text-stroke: 0px black;
   color: white;
   padding: 16px 20px;
-  border: none;
+  border: 3px solid #0b0c0b;
   cursor: pointer;
   width: 100%;
   margin-bottom:10px;
