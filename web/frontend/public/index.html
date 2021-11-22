@@ -24,13 +24,35 @@
           <p>Luis pingo enefete de Luis de pingo de captura de la casa de pingo, 
             Luis pingo enefete de Luis de pingo de captura de la casa de pingo</p>
 
-          <a href="">Registrar Pingo</a>
-          <button class="open-button" onclick="openForm()">Open Form</button>
+          <button class="open-button" onclick="openForm()">Registrar Pingo</button>
         
         </div>
           <img src="Images/imagen2.png" >
       </div>
-    
+      <div class="form-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+          <h1>Login</h1>
+
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" required>
+
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+
+          <button type="submit" class="btn">Login</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+      </div>
+
+      <script>
+      function openForm() {
+        document.getElementById("myForm").style.display = "block";
+      }
+
+      function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+      }
+      </script>
 
     <div class="box"> 
       <h2>Recientes</h2>
