@@ -1,7 +1,9 @@
 import React from "react";
 import './index';
+import axios from "axios";
 const MyApp = {};
 var film;
+
 
 
 function App(props) {
@@ -47,12 +49,23 @@ function getResults(){
     }
 
 }
+function postRQ(valor) {
+    axios.post('/api/todos', {
 
+    })
+        .then(function (response) {
+            console.log(response);
+        })
+        .catch(function (error) {
+            console.log(error);
+        });
+
+}
 
 function logSubmit(event) {
     event.preventDefault();
     console.log(document.getElementById("username").value);
-
+    postRQ(document.getElementById("username").value);
 
 
 }

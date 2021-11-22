@@ -11,18 +11,7 @@ function getRQ() {
 
     });
 }
-function postRQ(valor) {
-    axios.post('/api/todos', {
 
-    })
-        .then(function (response) {
-            console.log(response);
-        })
-        .catch(function (error) {
-            console.log(error);
-        });
-
-    }
 
 
 
