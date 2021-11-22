@@ -50,10 +50,9 @@ function getResults(){
 
 
 function logSubmit(event) {
-
-    var resultado = (selectElement('.form-container').innerHTML);
-    console.log(resultado);
     event.preventDefault();
+    console.log(document.getElementById("username").value);
+
 
 
 }
