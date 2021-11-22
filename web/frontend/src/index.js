@@ -12,6 +12,27 @@ function getRQ() {
 
     });
 }
+function postRQ(valor) {
+    axios.post('/api/todos', {
+        valor
+    })
+        .then(function (response) {
+            console.log(response);
+        })
+        .catch(function (error) {
+            console.log(error);
+        });
+
+
+
+
+    }
+
+
+
+
+
+
 
 function doSomething (data) {
     ReactDOM.render(<App tasks={data} />, document.getElementById("root"));

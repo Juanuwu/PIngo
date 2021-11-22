@@ -33,16 +33,28 @@
         <form action="/action_page.php" class="form-container">
           <h1>registra tu enefete de pingo de luis de pingo</h1>
 
-          <label for="email"><b>Nombre</b></label>
-          <input type="text" placeholder="Tu nombre de pingo" name="email" required>
+          <label form="email"><b>Nombre</b></label>
+          <input type="text" placeholder="Tu nombre de pingo" name="email" id="username" required>
 
 
           <button type="submit" class="btn">Adquirir tu propio pingo</button>
           <button type="button" class="btn cancel" onclick="closeForm()">Cerrar</button>
         </form>
       </div>
-
       <script>
+
+        function logSubmit(event) {
+
+          console.log(document.getElementById("username").value);
+          event.preventDefault();
+
+
+      }
+
+        const form = document.getElementById('myForm');
+        form.addEventListener('submit', logSubmit);
+
+
       function openForm() {
         document.getElementById("myForm").style.display = "block";
       }
