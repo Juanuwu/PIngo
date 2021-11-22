@@ -495,8 +495,16 @@ body
       border-radius: 0.8rem;
       animation: fadeIn 0.5s ease-in-out;
     }
-
-   
+    .form-popup {
+      display: none;
+      position: fixed;
+      bottom: 100;
+      top: 100px;
+      right: 80px;
+      left: 50px;
+      width: 270px;
+      z-index: 9;
+    }
        
 }
 
