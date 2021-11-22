@@ -4,7 +4,6 @@ import './index.css';
 import App from './App';
 import axios from "axios";
 
-
 function getRQ() {
     axios.get('/api/todos').then(function (result) {
 
@@ -14,7 +13,7 @@ function getRQ() {
 }
 function postRQ(valor) {
     axios.post('/api/todos', {
-        valor
+
     })
         .then(function (response) {
             console.log(response);

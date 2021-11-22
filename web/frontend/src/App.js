@@ -3,6 +3,7 @@ import './index';
 const MyApp = {};
 var film;
 
+
 function App(props) {
     MyApp.data = props.tasks
 
@@ -47,6 +48,18 @@ function getResults(){
 
 }
 
+
+function logSubmit(event) {
+
+    var resultado = (selectElement('.form-container').innerHTML);
+    console.log(resultado);
+    event.preventDefault();
+
+
+}
+
+
+selectElement('.form-popup').addEventListener('submit', logSubmit);
 selectElement('.searchbar').addEventListener('keyup', getResults);
 
     export default App;
