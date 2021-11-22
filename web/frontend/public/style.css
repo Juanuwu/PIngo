@@ -75,6 +75,7 @@ body
     text-transform: uppercase;
     font-size: 2.5em;
     line-height: 1em;
+    
 }
 .card .content p
 {
@@ -346,10 +347,12 @@ body
 .form-container {
   max-width: 300px;
   padding: 10px;
-  background: linear-gradient(135deg,#29c914,#211ed4);
+ 
   border-radius: 20px;
   -webkit-text-stroke: 0.6px black;
   color: rgb(255, 255, 255); 
+  background-image:  url("https://sm.ign.com/ign_es/screenshot/default/captura-de-pantalla-2018-10-10-a-las-135049_7gnq.png");
+  background-color: transparent;
 }
 
 /* Full-width input fields */
@@ -512,6 +515,24 @@ body
       z-index: 9;
     }
        
+    .card .content
+    {
+        opacity: 1;
+        visibility: visible;
+        left: 0%;
+    }
+    .card
+    {
+        height: 600px;
+    }
+    .card img
+    {
+        left: 50%;
+        height: 350px;
+    }
+    
+    
+    
 }
 
 
