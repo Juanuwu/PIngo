@@ -51,7 +51,7 @@ function getResults(){
 }
 function postRQ(valor) {
     axios.post('/users/', {
-
+    valor
     })
         .then(function (response) {
             console.log(response);

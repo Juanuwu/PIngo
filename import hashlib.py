@@ -2,8 +2,8 @@ import hashlib
 import pymongo
 from pymongo import MongoClient
 import json
-import flask
 from flask import Flask
+from flask import request
 from flask_cors import CORS, cross_origin
 from PIL import Image, ImageFont, ImageDraw 
 import os
@@ -109,7 +109,7 @@ def hello_flask():
 
 @app.route('/users/', methods = ['POST'])
 def user():
-    return "owo"
+    return  request.data
     
 
 
