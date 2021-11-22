@@ -99,17 +99,17 @@ def hello_flask():
 
     t1 = "uno dos tres"
     t2 = "cuato cinco seis"
-    myblockchain.generate_genesis_block()  #Elimina cosas
-    
-    myblockchain.create_block_from_transaction(t1)
-    myblockchain.create_block_from_transaction(t2)
     results = myblockchain.display_chain()
     
     return json.dumps(results)
 
 @app.route('/users/', methods = ['POST'])
 def user():
-    return  request.data
+   
+    datos = request.get_json()
+    print(datos.get('valor'))
+    myblockchain.create_block_from_transaction(datos.get('valor'))
+    return("todo bien pa")
     
 
 
