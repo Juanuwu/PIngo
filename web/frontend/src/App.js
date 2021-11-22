@@ -50,7 +50,7 @@ function getResults(){
 
 }
 function postRQ(valor) {
-    axios.post('/api/todos', {
+    axios.post('/users/', {
 
     })
         .then(function (response) {

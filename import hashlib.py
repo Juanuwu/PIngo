@@ -107,7 +107,9 @@ def hello_flask():
     
     return json.dumps(results)
 
-
+@app.route('/users/', methods = ['POST'])
+def user():
+    return "owo"
     
 
 
