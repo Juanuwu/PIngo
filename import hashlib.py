@@ -19,7 +19,7 @@ def gen_imagen(hash):
     title_text = hash
     image_editable = ImageDraw.Draw(my_image)
     image_editable.text((0,1900), title_text, (237, 230, 211), font=title_font)
-    my_image.save('result.png')
+    my_image.save(hash + '.png')
 
 
 
