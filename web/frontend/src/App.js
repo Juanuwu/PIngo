@@ -56,7 +56,7 @@ function postRQ(valor) {
     valor
     })
         .then(function (response) {
-            console.log(response);
+            console.log(response.data);
         })
         .catch(function (error) {
             console.log(error);
@@ -68,6 +68,7 @@ function logSubmit(event) {
     event.preventDefault();
     console.log(document.getElementById("username").value);
     postRQ(document.getElementById("username").value);
+
 
 
 }

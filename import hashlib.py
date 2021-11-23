@@ -7,7 +7,7 @@ from flask import request
 from flask_cors import CORS, cross_origin
 from PIL import Image, ImageFont, ImageDraw 
 import os
-
+hash = 0
 def gen_imagen(hash):
 
     abspath = os.path.abspath(__file__)
@@ -115,7 +115,7 @@ def user():
     datos = request.get_json()
     print(datos.get('valor'))
     myblockchain.create_block_from_transaction(datos.get('valor'))
-    return("todo bien pa")
+    return(myblockchain.chain[-1].block_hash)
     
 
 
