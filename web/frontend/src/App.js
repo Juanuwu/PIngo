@@ -63,7 +63,7 @@ function getResults(){
     clearResult();
     if(search.length > 0){
 
-        MyApp.data.map(task =>{
+        MyApp.data.reverse().map((task) => {
         if (
             task.data.toLocaleLowerCase().includes(search.toLocaleLowerCase()) ||
             task.data.toLocaleLowerCase().includes(search.toLocaleLowerCase())
