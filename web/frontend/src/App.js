@@ -64,13 +64,23 @@ function getResults(){
     if(search.length > 0){
 
         MyApp.data.reverse().map((task) => {
+            let link = 'https://127.0.0.1:5000/static/' + task._id + ".png";
         if (
             task.data.toLocaleLowerCase().includes(search.toLocaleLowerCase()) ||
             task.data.toLocaleLowerCase().includes(search.toLocaleLowerCase())
             ){
                 selectElement('.search-results').innerHTML+=`
                 <div class = "search-results-item">
-                    <span class= "search-item">${"Nombre: " + task.data + "\n" + " Hash: " + task._id + "\n" + "Prev: " + task.prev}</span>
+                    <span class= "search-item">${"Nombre: " + task.data + "\n" + " Hash: " + task._id + "\n" + "Prev: " + task.prev + "\n"}</span>
+                    <a href=static/${task._id}.png onmouseover="javascript:event.target.port=5000">test</a>
+
+
+
+
+
+
+                    
+
                 </div>
                 `;
             }
