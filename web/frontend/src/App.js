@@ -1,6 +1,8 @@
 import React from "react";
 import './index';
+import './style.css';
 import axios from "axios";
+import Draggable from "react-draggable";
 const MyApp = {};
 var film;
 
@@ -10,15 +12,31 @@ function App(props) {
     MyApp.data = props.tasks
     const lastIndex = MyApp.data.length - 10;
     return (
-
+    [
         <div className="col">
-
 
             {film = MyApp.data.slice(-10).reverse().map((task) =>
 
             <div class="chain">{task.data + "\n" + "Hash:"  + task._id }  <hr className="dashed"/> </div>)
             }
-        </div>
+        </div>,
+        <Draggable>
+            <div className="form-popup" id="myForm">
+
+            <form action="/action_page.php" className="form-container">
+                <h1>registra tu enefete de pingo de luis de pingo</h1>
+
+                <label form="email"><b>Nombre</b></label>
+                <input type="text" placeholder="Tu nombre de pingo" name="email" id="username" required/>
+
+
+                    <button type="submit" className="btn">Adquirir tu propio pingo</button>
+                    <button type="button" className="btn cancel" onClick="closeForm()">Cerrar</button>
+            </form>
+
+            </div>
+        </Draggable>
+        ]
     );
 
 }
@@ -82,7 +100,10 @@ function logSubmit(event) {
 
 
 
-selectElement('.form-popup').addEventListener('submit', logSubmit);
+
+
+
+document.addEventListener('submit', logSubmit);
 selectElement('.searchbar').addEventListener('keyup', getResults);
 
     export default App;

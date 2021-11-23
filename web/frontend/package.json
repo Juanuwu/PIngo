@@ -7,6 +7,7 @@
     "axios": "^0.24.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-draggable": "^4.4.4",
     "react-scripts": "^4.0.3"
   },
   "scripts": {
@@ -34,7 +35,7 @@
     ]
   },
   "devDependencies": {
-    "immer": "^9.0.6",
-	"ansi-html-community": "0.0.8"
+    "ansi-html-community": "0.0.8",
+    "immer": "^9.0.6"
   }
 }
