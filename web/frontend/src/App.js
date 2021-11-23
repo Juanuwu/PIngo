@@ -58,7 +58,7 @@ function postRQ(valor) {
         .then(function (response) {
 
             console.log(response.data);
-            document.getElementById("luis pingo").src="http://127.0.0.1:5000/static/2c64ce67a49215c398d68b375d58157e4e980839a877a9bec0a80f2404079f8c.png";
+            document.getElementById("luis pingo").src="http://127.0.0.1:5000/static/" + response.data +".png";
             document.getElementById("luis pingo").style.visibility = "visible";
 
 
