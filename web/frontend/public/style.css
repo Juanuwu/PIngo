@@ -47,12 +47,10 @@ body
     transform: translateX(-50%);
     height: 400px;
     transition: 0.5s;
-}
-.card:hover img
-{
     left: 80%;
     height: 500px;
 }
+
 .card .content
 {
     position: relative;
@@ -62,13 +60,11 @@ body
     opacity: 0;
     visibility: hidden;
     transition: 0.5s;
-}
-.card:hover .content
-{
     opacity: 1;
     visibility: visible;
     left: 0%;
 }
+
 .card .content h2
 {
     color: #fff;
@@ -105,17 +101,10 @@ body
         max-width: 600px;
         transition: 0.5s;
         align-items: flex-start;
+        height: 600px;
         
     }
-    .card:hover
-    {
-        height: 600px;
-    }
-    .card:hover img
-    {
-        left: 50%;
-        height: 350px;
-    }
+
     .card .content
     {
         width: 100%;
