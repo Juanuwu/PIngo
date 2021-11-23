@@ -23,7 +23,7 @@ function App(props) {
         <Draggable>
             <div className="form-popup" id="myForm">
 
-            <form action="/action_page.php" className="form-container">
+            <form onSubmit={handleSubmit} action="/action_page.php" className="form-container">
                 <h1>registra tu enefete de pingo de luis de pingo</h1>
 
                 <label form="email"><b>Nombre</b></label>
@@ -42,9 +42,13 @@ function App(props) {
     );
 
 }
-function closeForm() {
-    document.getElementById("myForm").style.display = "none";
+
+function handleSubmit(event) {
+    event.preventDefault();
+    console.log(document.getElementById("username").value);
+    postRQ(document.getElementById("username").value);
 }
+
 
 function selectElement(selector){
     return document.querySelector(selector);
