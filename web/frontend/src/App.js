@@ -31,7 +31,9 @@ function App(props) {
 
 
                     <button type="submit" className="btn">Adquirir tu propio pingo</button>
-                    <button type="button" className="btn cancel" onClick="closeForm()">Cerrar</button>
+                    <button type="button" className="btn cancel" onClick={() => {
+                        document.getElementById("myForm").style.display = "none";
+                    }}>Cerrar</button>
             </form>
 
             </div>
@@ -39,6 +41,9 @@ function App(props) {
         ]
     );
 
+}
+function closeForm() {
+    document.getElementById("myForm").style.display = "none";
 }
 
 function selectElement(selector){

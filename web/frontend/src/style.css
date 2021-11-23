@@ -331,7 +331,7 @@ body
 .form-popup {
   display: none;
   position: fixed;
-  bottom: 200px;
+  bottom: 100;
   left: 10px;
   border: 3px solid #0c0b0b;
   z-index: 9;
@@ -450,7 +450,7 @@ body
     .form-popup {
       display: none;
       position: fixed;
-      bottom: 100;
+      bottom: 200px;
       left: 200px;
       z-index: 9;
     }
@@ -510,7 +510,7 @@ body
       width: 270px;
       z-index: 9;
     }
-       
+
     .card .content
     {
         opacity: 1;
@@ -526,7 +526,7 @@ body
         left: 50%;
         height: 350px;
     }
-    
+
     
     
 }
