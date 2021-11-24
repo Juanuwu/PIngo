@@ -1,5 +1,4 @@
- devServer: {
-    compress: true,
-    disableHostCheck: true   // That solved it
-
- }      
+devServer: {
+  compress: true,
+  public: 'luispin.ga' // That solved it
+}
