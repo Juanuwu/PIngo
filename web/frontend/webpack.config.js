@@ -1,5 +1,8 @@
- devServer: {
-    compress: true,
-    disableHostCheck: true,   // That solved it
-
- }      
+devServer: {
+  compress: true,
+  inline: true,
+  port: '3000',
+  allowedHosts: [
+      '.luispin.ga'
+  ]
+},
