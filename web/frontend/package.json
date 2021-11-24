@@ -11,8 +11,8 @@
     "react-scripts": "^4.0.3"
   },
   "scripts": {
-     "start": "node ./node_modules/react-scripts/bin/react-scripts.js start",
-    "build": "webpack --config prod.config.js",
+    "start": "node ./node_modules/react-scripts/bin/react-scripts.js start",
+    "build": "webpack --config webpack.config.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -36,6 +36,7 @@
   },
   "devDependencies": {
     "ansi-html-community": "0.0.8",
-    "immer": "^9.0.6"
+    "immer": "^9.0.6",
+    "webpack-cli": "^4.9.1"
   }
 }
