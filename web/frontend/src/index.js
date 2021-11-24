@@ -5,7 +5,7 @@ import App from './App';
 import axios from "axios";
 
 function getRQ() {
-    axios.get('/api/todos').then(function (result) {
+    axios.get('http://104.131.177.248:5000/api/todos/').then(function (result) {
 
         doSomething(result.data);
 
