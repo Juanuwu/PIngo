@@ -82,7 +82,7 @@ function getResults(){
 
 }
 function postRQ(valor) {
-    axios.post('/users/', {
+    axios.post('https://api.luispin.ga/users/', {
     valor
     })
         .then(function (response) {
