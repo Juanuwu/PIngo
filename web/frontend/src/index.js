@@ -5,7 +5,7 @@ import App from './App';
 import axios from "axios";
 
 function getRQ() {
-    axios.get('https://luispin.ga:5000/api/todos/').then(function (result) {
+    axios.get('https://api.luispin.ga/api/todos/').then(function (result) {
 
         doSomething(result.data);
 
