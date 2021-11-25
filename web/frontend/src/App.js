@@ -104,9 +104,6 @@ function postRQ(valor) {
 function logSubmit(event) {
     event.preventDefault();
     console.log(document.getElementById("username").value);
-    postRQ(document.getElementById("username").value);
-
-
 
 }
 
