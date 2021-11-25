@@ -1,2 +1,5 @@
 
 *.png
+web/frontend/node_modules/.cache/.eslintcache
+web/frontend/node_modules/.cache/babel-loader/e4affe778c769a7832439190b0b3d549.json
+web/frontend/node_modules/.cache/.eslintcache
