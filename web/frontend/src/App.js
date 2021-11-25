@@ -65,7 +65,7 @@ function getResults(){
     if(search.length > 0){
 
         MyApp.data.reverse().map((task) => {
-            let link = 'https://luispin.ga:5000/static/' + task._id + ".png";
+            let link = 'https://api.luispin.ga/static/' + task._id + ".png";
         if (
             task.data.toLocaleLowerCase().includes(search.toLocaleLowerCase()) ||
             task.data.toLocaleLowerCase().includes(search.toLocaleLowerCase())
@@ -88,7 +88,7 @@ function postRQ(valor) {
         .then(function (response) {
 
             console.log(response.data);
-            document.getElementById("luis pingo").src="https://luispin.ga:5000/static/" + response.data +".png";
+            document.getElementById("luis pingo").src="https://api.luispin.ga/static/" + response.data +".png";
             document.getElementById("luis pingo").style.visibility = "visible";
 
 
