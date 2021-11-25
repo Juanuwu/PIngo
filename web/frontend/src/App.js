@@ -73,7 +73,7 @@ function getResults(){
                 selectElement('.search-results').innerHTML+=`
                 <div class = "search-results-item">
                     <span class= "search-item">${"Nombre: " + task.data + "\n" + " Hash: " + task._id + "\n" + "Prev: " + task.prev + "\n"}</span>
-                    <a href=static/${task._id}.png onmouseover="javascript:event.target.port=5000" target="_blank">Descargar</a>
+                    <a href=https://api.luispin.ga/static/${task._id}.png target="_blank">Descargar</a>
                 </div>
                 `;
             }
