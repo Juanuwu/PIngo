@@ -1,5 +1,6 @@
 import React from "react";
 import './index';
+import { getRQ } from './index.js';
 import './style.css';
 import axios from "axios";
 import Draggable from "react-draggable";
@@ -90,7 +91,7 @@ function postRQ(valor) {
             console.log(response.data);
             document.getElementById("luis pingo").src="https://api.luispin.ga/static/" + response.data +".png";
             document.getElementById("luis pingo").style.visibility = "visible";
-
+            getRQ();
 
 
 
