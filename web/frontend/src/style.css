@@ -128,16 +128,9 @@ body
     margin: 10rem 0 2.5rem;
   }
 
-  input[type="text"] {
-    width: 100%;
-    padding: 0.8rem 0.5rem;
-    background-color: #0d0c1d;
-    border: none;
-    outline: 2px solid #604e7a;
-    color: #f8f4f9;
-  }
+  
 
-  input[type="text"]:focus {
+  .searchbar:focus {
     border: none;
     outline-color: #000000;
   }
@@ -145,6 +138,12 @@ body
   .searchbar {
     max-width: 25rem;
     margin-bottom: 1rem;
+      width: 100%;
+      padding: 0.8rem 0.5rem;
+      background-color: #0d0c1d;
+      border: none;
+      outline: 2px solid #604e7a;
+      color: #f8f4f9;
     
   }
 

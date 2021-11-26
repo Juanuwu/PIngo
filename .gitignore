@@ -10,3 +10,12 @@ web/frontend/node_modules/.cache/babel-loader/e25b417db0b356366cea054837ba6adc.j
 web/frontend/node_modules/.cache/.eslintcache
 web/frontend/node_modules/.cache/babel-loader/16aae9214ca87a5a0358556d0ca03ba5.json
 web/frontend/node_modules/.cache/.eslintcache
+*.json
+web/frontend/node_modules/.cache/terser-webpack-plugin/index-v5/1d/40/d5b1ecb91495e0bd76a9a53cb27e95e883435ea0e3418b767c398c2fc55e
+web/frontend/node_modules/.cache/terser-webpack-plugin/index-v5/09/2a/8c485c6159a48bdf286b78316030ab814d9e0f07a28292381c26cb179834
+web/frontend/node_modules/.cache/terser-webpack-plugin/index-v5/04/89/ee4b59938305ccbe729288d58075e734d97bc28f8c7e60590752724c5e66
+web/frontend/node_modules/.cache/terser-webpack-plugin/content-v2/sha512/e8/40/560d54d0126fc62cf91b9436c3c177bc5b7e7020b22258237c218779495683a48e11603bc1cc5140763d4c9879a887c25d8502d44e796a5c00ec592b85fe
+web/frontend/node_modules/.cache/terser-webpack-plugin/content-v2/sha512/79/ad/d7d56194fcb6e13bfdb2fd9214a9c1a9cff1d781fd2362bdfeb037aa6c1a98e8bd6759f6ccf8d0a65b266d54add907c26cc6ba5ff998b44670f3e0f024b6
+web/frontend/node_modules/.cache/terser-webpack-plugin/content-v2/sha512/10/87/3bddb4bdec9497d53024e7f4da3f93388c3eb2edfe8fdd4bf0cbf7a5d12bf203a7014568ef18124dd0ba16ec9ac5bf238f34ec8dae8893dbfc05e914652c
+web/frontend/node_modules/.cache/.eslintcache
+web/frontend/node_modules/.cache/.eslintcache
