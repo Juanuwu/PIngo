@@ -7,41 +7,83 @@ import Draggable from "react-draggable";
 const MyApp = {};
 var film;
 require('dotenv').config()
-
+var width = window.innerWidth;
+var height = window.innerHeight;
 
 function App(props) {
     MyApp.data = props.tasks
     const lastIndex = MyApp.data.length - 10;
     clearResult()
-    return (
-    [
-        <div className="col">
+    if (width  > 480) {
+        // Mobile code
 
-            {film = MyApp.data.slice(-10).reverse().map((task) =>
+        return (
+            [
+                <div className="col">
 
-            <div class="chain">{task.data + "\n" + "Hash:"  + task._id }  <hr className="dashed"/> </div>)
-            }
-        </div>,
-        <Draggable>
-            <div className="form-popup" id="myForm">
+                    {film = MyApp.data.slice(-10).reverse().map((task) =>
 
-            <form onSubmit={handleSubmit} action="/action_page.php" className="form-container">
-                <h1>registra tu enefete de pingo de luis de pingo</h1>
+                        <div class="chain">{task.data + "\n" + "Hash:" + task._id}
+                            <hr className="dashed"/>
+                        </div>)
+                    }
+                </div>,
+                <Draggable>
+                    <div className="form-popup" id="myForm">
 
-                <label form="email"><b>Nombre</b></label>
-                <input type="text" placeholder="Tu nombre de pingo" name="email" id="username" required/>
+                        <form onSubmit={handleSubmit} action="/action_page.php" className="form-container">
+                            <h1>registra tu enefete de pingo de luis de pingo</h1>
+
+                            <label form="email"><b>Nombre</b></label>
+                            <input type="text" placeholder="Tu nombre de pingo" name="email" id="username" required/>
 
 
-                    <button type="submit" className="btn">Adquirir tu propio pingo</button>
-                    <button type="button" className="btn cancel" onClick={() => {
-                        document.getElementById("myForm").style.display = "none";
-                    }}>Cerrar</button>
-            </form>
+                            <button type="submit" className="btn">Adquirir tu propio pingo</button>
+                            <button type="button" className="btn cancel" onClick={() => {
+                                document.getElementById("myForm").style.display = "none";
+                            }}>Cerrar
+                            </button>
+                        </form>
 
-            </div>
-        </Draggable>
-        ]
-    );
+                    </div>
+                </Draggable>
+            ]
+        );
+    }
+    else {
+        return (
+            [
+                <div className="col">
+
+                    {film = MyApp.data.slice(-10).reverse().map((task) =>
+
+                        <div class="chain">{task.data + "\n" + "Hash:" + task._id}
+                            <hr className="dashed"/>
+                        </div>)
+                    }
+                </div>,
+
+                    <div className="form-popup" id="myForm">
+
+                        <form onSubmit={handleSubmit} action="/action_page.php" className="form-container">
+                            <h1>registra tu enefete de pingo de luis de pingo</h1>
+
+                            <label form="email"><b>Nombre</b></label>
+                            <input type="text" placeholder="Tu nombre de pingo" name="email" id="username" required/>
+
+
+                            <button type="submit" className="btn">Adquirir tu propio pingo</button>
+                            <button type="button" className="btn cancel" onClick={() => {
+                                document.getElementById("myForm").style.display = "none";
+                            }}>Cerrar
+                            </button>
+                        </form>
+
+                    </div>
+                
+            ]
+        );
+    }
 
 }
 
