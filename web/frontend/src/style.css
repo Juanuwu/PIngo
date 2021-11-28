@@ -228,7 +228,7 @@ body
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-
+    visibility: visible;
     position: relative;
     top: 20px;
     right: 80px;
@@ -349,6 +349,7 @@ body
   font-weight: 6000;
 
 }
+
 /*Formulario_________________________________________________________________________________________*/
 .open-button {
   position: relative;
@@ -361,7 +362,21 @@ body
   text-decoration: none;
   
 }
+.button{
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    background-color: #03a9f4;
+    color:white;
+    cursor: pointer;
+    position:relative;
+    left:45px;
+    margin-left: 160px;
 
+
+}
 /* The popup form - hidden by default */
 .form-popup {
   display: none;
@@ -506,9 +521,11 @@ body
 
 
     }
+
     .card .content
     {
         padding: 30px;
+
     }
 
     .card
@@ -596,7 +613,11 @@ body
         height: 300px;
     }
 
-    
+    .button
+    {
+        left: 10px;
+        margin-left: 160px;
+    }
     
 }
 

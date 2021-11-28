@@ -76,8 +76,9 @@
 
 
 
-    <div class="box"> 
-      <h2>Recientes</h2>
+    <div id="boxi" class="box">
+
+      <h2>Recientes <button id="minim" class="button" type="button">-</button></h2>
       <ul>
           
           <li><noscript>You need to enable JavaScript to run this app.</noscript> <!--Para esconderlo-->
@@ -85,6 +86,21 @@
           
       </ul>
   </div>
+      <script>
+        var span = document.getElementById("minim");
+        var box = document.getElementById("boxi")
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+          if (box.style.visibility === "visible") {
+            box.style.visibility = "hidden";
+            span.style.visibility= "visible";
+          } else {
+            box.style.visibility = "visible";
+
+          }
+
+        }
+      </script>
     </section>
 
     <div class="container">
