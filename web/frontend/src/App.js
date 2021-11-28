@@ -5,7 +5,6 @@ import './style.css';
 import axios from "axios";
 import Draggable from "react-draggable";
 const MyApp = {};
-var film;
 require('dotenv').config()
 var width = window.innerWidth;
 var height = window.innerHeight;
@@ -21,7 +20,7 @@ function App(props) {
             [
                 <div className="col">
 
-                    {film = MyApp.data.slice(-10).reverse().map((task) =>
+                    {MyApp.data.slice(-10).reverse().map((task) =>
 
                         <div class="chain">{task.data + "\n" + "Hash:" + task._id}
                             <hr className="dashed"/>
@@ -55,7 +54,7 @@ function App(props) {
             [
                 <div className="col">
 
-                    {film = MyApp.data.slice(-10).reverse().map((task) =>
+                    {MyApp.data.slice(-10).reverse().map((task) =>
 
                         <div class="chain">{task.data + "\n" + "Hash:" + task._id}
                             <hr className="dashed"/>
