@@ -123,6 +123,7 @@ function getResults(){
 
 }
 function postRQ(valor) {
+    document.getElementById("myForm").style.display = "none";
     axios.post('https://api.luispin.ga/users/', {
     valor
     })
@@ -131,7 +132,7 @@ function postRQ(valor) {
             console.log(response.data);
             document.getElementById("luis pingo").src="https://api.luispin.ga/static/" + response.data +".png";
             document.getElementById("luis pingo").style.visibility = "visible";
-            document.getElementById("myForm").style.display = "none";
+
             getRQ();
             var modal = document.getElementById("myModal");
             modal.style.display = "block";
