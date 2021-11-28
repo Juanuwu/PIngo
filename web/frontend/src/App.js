@@ -31,7 +31,7 @@ function App(props) {
                 <Draggable>
                     <div className="form-popup" id="myForm">
 
-                        <form onSubmit={handleSubmit} action="/action_page.php" className="form-container" autocomplete="off">
+                        <form onSubmit={handleSubmit} action="/action_page.php" className="form-container" autoComplete="off">
                             <h1>registra tu enefete de pingo de luis de pingo</h1>
 
                             <label form="email"><b>Nombre</b></label>
