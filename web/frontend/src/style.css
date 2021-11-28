@@ -463,7 +463,7 @@ body
 }
 
 
-@media (max-width: 420px ) and  (orientation: portrait)
+@media (max-width: 430px ) and  (orientation: portrait)
 {
     .pvw-title{
         display: none;
@@ -604,7 +604,7 @@ body
     
 }
 
-@media (max-width: 1300px) and (orientation: landscape)/*Baja resolucion______________________*/
+@media (max-width: 1440px) and (orientation: landscape)/*Baja resolucion______________________*/
 {
     .card
     {
