@@ -10,7 +10,7 @@
 section
 {
     position: relative;
-    min-height: 100vh;
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -342,7 +342,7 @@ body
   overflow: hidden;
   word-break:break-all;
   white-space:pre-line;
-  height:50rem;
+  height:32.5rem;
   
   text-align: center;
   font-size: 12px;
@@ -449,12 +449,11 @@ body
       background-size: cover;
       background-position: center center;
       background-attachment: fixed;
-  
       position: relative;
-      top: 20px;
+      margin-top: 80px;
+      top: -35px;
       right: 80px;
       left: 400px;
-      
       width: 350px;
       border-bottom: 20px solid #03a9f4;
       border-bottom-left-radius: 10px;
@@ -466,12 +465,11 @@ body
       overflow: hidden;
       word-break:break-all;
       white-space:pre-line;
-      height:50rem;
-      
+      height:555px;
       text-align: center;
       font-size: 15px;
       font-weight: 6000;
-    
+
     }
     .box ul li
     {
@@ -519,6 +517,20 @@ body
         min-height: 100vh;
         background: linear-gradient(135deg,#29c914,#211ed4);
         color: #f8f4f9;
+
+
+    }
+    .divTabla {
+        position: relative;
+        height:558px;
+
+
+
+    }
+    section
+    {
+
+        height: 850px;
 
 
     }
