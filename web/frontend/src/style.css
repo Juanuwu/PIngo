@@ -10,21 +10,23 @@
 section
 {
     position: relative;
-    width: 100%;
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 body
 {
+
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     background: linear-gradient(135deg,#29c914,#211ed4);
     color: #f8f4f9;
+
 }
 .card
 {
@@ -224,7 +226,7 @@ body
 .box  /*no toques nada Juan*/
 {
     background-size: cover;
-    background-position: center center;
+    background-position: center;
     background-attachment: fixed;
 
     position: relative;
@@ -492,6 +494,18 @@ body
 
 @media (max-width: 420px)
 {
+
+    .body
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: linear-gradient(135deg,#29c914,#211ed4);
+        color: #f8f4f9;
+
+
+    }
     .card .content
     {
         padding: 30px;
@@ -499,19 +513,40 @@ body
 
     .card
     {
+
+        position: absolute;
+        left: 150px;
+        width: 100%;
+        margin-left: -150px;
+        display: flex;
+        justify-content: flex-start;
+
+
+
+
+
+    }
+    .box  /*no toques nada Juan*/
+    {
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
         position: relative;
-        left: 140px;
-        width: 300px;
-        max-width: 600px;
-        transition: 0.5s;
-        align-items: flex-start;
-        
+        margin-right: -335px;
+        left: -170px;
+        top: 1050px;
+        width: 20rem;
+        border-bottom: 20px solid #03a9f4;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+
     }
     .container {
       max-width: 20rem;
       margin: 0 auto;
       padding: 1.5rem;
       text-align: center;
+
     }
     .search-results-item {
       
