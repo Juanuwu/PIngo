@@ -372,6 +372,7 @@ body
     color:white;
     cursor: pointer;
     position:relative;
+    border-radius: 10px;
     left:45px;
     margin-left: 160px;
 
