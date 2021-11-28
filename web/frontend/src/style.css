@@ -225,15 +225,22 @@ body
 /* Modal Content/Box */
 .modal-content {
     background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
+    margin: 20% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: 30%; /* Could be more or less, depending on screen size */
+    color: #29c914;
 }
+.modal img
 
+{   position: relative;
+    width: 30%;
+    left:185px;
+    align-self: center;
+}
 /* The Close Button */
 .close {
-    color: #aaa;
+    color: #090303;
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -486,6 +493,22 @@ body
 
 
 
+    }
+
+    .modal-content {
+        background-color: #fefefe;
+        margin: 20% auto; /* 15% from the top and centered */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 60%; /* Could be more or less, depending on screen size */
+        color: #29c914;
+    }
+    .modal img
+
+    {   position: relative;
+        width: 100%;
+        left:0px;
+        align-self: center;
     }
 
     section
