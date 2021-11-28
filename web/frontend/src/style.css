@@ -530,7 +530,7 @@ body
     section
     {
 
-        height: 850px;
+        height: 620px;
 
 
     }
@@ -589,10 +589,12 @@ body
       overflow: hidden;
       word-break:break-all;
       white-space:pre-line;
+        align-self: center;
+
 
       position: relative;
       left: -5px;
-      width: 280px;
+      width: 260px;
 
       background-color: #151630;
       padding: 1rem;
