@@ -7,11 +7,10 @@ import Draggable from "react-draggable";
 const MyApp = {};
 require('dotenv').config()
 var width = window.innerWidth;
-var height = window.innerHeight;
+
 
 function App(props) {
     MyApp.data = props.tasks
-    const lastIndex = MyApp.data.length - 10;
     clearResult()
     if (width  > 480) {
         // Mobile code
