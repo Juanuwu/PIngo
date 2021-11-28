@@ -15,6 +15,12 @@ section
     justify-content: center;
     align-items: center;
 
+
+}
+.pvw-title{
+    margin-right: -60px;
+    margin-left: 280px;
+    width:40px;
 }
 
 body
@@ -91,6 +97,8 @@ body
 
 
 
+
+
 @media (max-width: 991px) /*Baja resolucion______________________*/
 {
     .card
@@ -123,7 +131,9 @@ body
     margin: 0 auto;
     padding: 1.5rem;
     text-align: center;
+
   }
+
 
   .searchbar-label {
     display: block;
@@ -508,6 +518,9 @@ body
 
 @media (max-width: 420px)
 {
+    .pvw-title{
+        display: none;
+    }
 
     .body
     {
@@ -527,6 +540,7 @@ body
 
 
     }
+
     section
     {
 
@@ -534,6 +548,7 @@ body
 
 
     }
+
 
     .card .content
     {
@@ -581,6 +596,7 @@ body
 
 
     }
+
     .search-results-item {
       
       white-space: nowrap;
