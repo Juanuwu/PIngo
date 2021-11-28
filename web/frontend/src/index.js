@@ -8,6 +8,8 @@ export function getRQ() {
     axios.get('https://api.luispin.ga/api/todos/').then(function (result) {
 
         doSomething(result.data);
+        var box = document.getElementById("boxi")
+        box.style.visibility = "visible";
 
     });
 }
