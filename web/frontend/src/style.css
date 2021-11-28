@@ -516,6 +516,7 @@ body
 
         position: absolute;
         left: 150px;
+        top: 20px;
         width: 100%;
         margin-left: -150px;
         display: flex;
@@ -534,7 +535,7 @@ body
         position: relative;
         margin-right: -335px;
         left: -170px;
-        top: 1050px;
+        top: 700px;
         width: 20rem;
         border-bottom: 20px solid #03a9f4;
         border-bottom-left-radius: 10px;
@@ -542,10 +543,12 @@ body
 
     }
     .container {
-      max-width: 20rem;
-      margin: 0 auto;
+
+      width: 300px;
+      margin-top: 750px;
       padding: 1.5rem;
       text-align: center;
+
 
     }
     .search-results-item {
