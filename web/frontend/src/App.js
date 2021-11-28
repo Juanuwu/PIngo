@@ -134,6 +134,10 @@ function postRQ(valor) {
             document.getElementById("luis pingo").src="https://api.luispin.ga/static/" + response.data +".png";
             document.getElementById("luis pingo").style.visibility = "visible";
             getRQ();
+            var modal = document.getElementById("myModal");
+            modal.style.display = "block";
+
+
 
 
 
