@@ -26,7 +26,7 @@ def gen_imagen(hash):
 def get_database():
     
     # Provide the mongodb atlas url to connect python to mongodb using pymongo
-    CONNECTION_STRING = "***REMOVED***"
+    CONNECTION_STRING = ""
 
     # Create a connection using MongoClient. You can import MongoClient or use pymongo.MongoClient
     
