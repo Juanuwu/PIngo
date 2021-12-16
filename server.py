@@ -62,6 +62,7 @@ class GeekCoinBlock:
                 try:
                     collection_name.insert(item_1)
                     self.imagen(self.block_hash)
+                    connected = True
             
                 except:
                     print("error")
