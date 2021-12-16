@@ -41,7 +41,7 @@ collection_name = dbname["chuso"]
 
 class GeekCoinBlock:
     
-    def __init__(self, previous_block_hash, transaction_list):
+    def __init__(self, previous_block_hash, transaction_list, enviar):
 
         self.previous_block_hash = previous_block_hash
         self.transaction_list = transaction_list
@@ -55,12 +55,14 @@ class GeekCoinBlock:
             "prev" :  self.previous_block_hash,
             "_id" : self.block_hash
                  }
-        try:
-            collection_name.insert(item_1)
-            self.imagen(self.block_hash)
+        if enviar:
+            try:
+                collection_name.insert(item_1)
+                self.imagen(self.block_hash)
             
-        except:
-            print("error")
+            except:
+                print("error")
+    
     def imagen(self, hash):
         gen_imagen(hash)
 
@@ -69,16 +71,36 @@ class GeekCoinBlock:
 class Blockchain:
     def __init__(self):
         self.chain = []
-        self.generate_genesis_block()
+        self.dataL = []
+        self.prevL = []
+
+        
+        self.prevs = list(collection_name.find({},{"_id":0, "prev": 1}))
+        for f in self.prevs:
+            valores = "".join(f.values())
+            self.prevL.append(valores)
+        self.data = list(collection_name.find({},{"_id":0,"data":1}))
+        for f in self.data:
+            valores = "".join(f.values())
+            self.dataL.append(valores)
+
+        for i in range(0, len(self.dataL)):
+            self.chain.append(GeekCoinBlock(self.prevL[i], self.dataL[i], False))
+        print(self.dataL)
+        print(self.prevL)
+        print(self.chain) 
+        
+            
+        
 
     def generate_genesis_block(self):
-        self.chain.append(GeekCoinBlock("0", "Genesis Block"))
+        self.chain.append(GeekCoinBlock("0", "Genesis Block", True))
         
 
     
     def create_block_from_transaction(self, transaction_list):
         previous_block_hash = self.last_block.block_hash
-        self.chain.append(GeekCoinBlock(previous_block_hash, transaction_list))
+        self.chain.append(GeekCoinBlock(previous_block_hash, transaction_list, True))
         
 
     def display_chain(self):
@@ -96,10 +118,11 @@ class Blockchain:
     @property
     def last_block(self):
         return self.chain[-1]
-myblockchain = Blockchain()        
+      
 
 app = Flask(__name__)
 CORS(app, support_credentials=True)
+myblockchain = Blockchain()  
 
 @app.route('/api/todos/')
 def hello_flask():
@@ -116,6 +139,7 @@ def user():
     print(datos.get('valor'))
     myblockchain.create_block_from_transaction(datos.get('valor'))
     return(myblockchain.chain[-1].block_hash)
+
     
 
 
