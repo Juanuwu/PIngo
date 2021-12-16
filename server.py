@@ -26,7 +26,7 @@ def gen_imagen(hash):
 def get_database():
     
     # Provide the mongodb atlas url to connect python to mongodb using pymongo
-    CONNECTION_STRING = "***REMOVED***"
+    CONNECTION_STRING = ""
 
     # Create a connection using MongoClient. You can import MongoClient or use pymongo.MongoClient
     
@@ -84,11 +84,9 @@ class Blockchain:
         
             
         
-    def update(self):
-        self.chain = []
-        self.prevs = list(collection_name.find({},{"_id":0, "prev": 1, "data":1}))
-        for f in self.prevs:
-            self.chain.append(GeekCoinBlock(f.get("prev"), f.get("data"), False))   
+        print(self.chain) 
+        
+            
         
 
     def generate_genesis_block(self):
@@ -115,7 +113,6 @@ class Blockchain:
 
     @property
     def last_block(self):
-        self.update()
         return self.chain[-1]
       
 
