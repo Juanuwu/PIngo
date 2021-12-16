@@ -56,12 +56,15 @@ class GeekCoinBlock:
             "_id" : self.block_hash
                  }
         if enviar:
-            try:
-                collection_name.insert(item_1)
-                self.imagen(self.block_hash)
+            connected = False
+            while not connected:
+
+                try:
+                    collection_name.insert(item_1)
+                    self.imagen(self.block_hash)
             
-            except:
-                print("error")
+                except:
+                    print("error")
     
     def imagen(self, hash):
         gen_imagen(hash)
