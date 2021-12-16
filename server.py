@@ -75,23 +75,15 @@ class GeekCoinBlock:
 class Blockchain:
     def __init__(self):
         self.chain = []
-        self.dataL = []
-        self.prevL = []
+        
 
         
-        self.prevs = list(collection_name.find({},{"_id":0, "prev": 1}))
+        self.prevs = list(collection_name.find({},{"_id":0, "prev": 1, "data":1}))
         for f in self.prevs:
-            valores = "".join(f.values())
-            self.prevL.append(valores)
-        self.data = list(collection_name.find({},{"_id":0,"data":1}))
-        for f in self.data:
-            valores = "".join(f.values())
-            self.dataL.append(valores)
-
-        for i in range(0, len(self.dataL)):
-            self.chain.append(GeekCoinBlock(self.prevL[i], self.dataL[i], False))
-        print(self.dataL)
-        print(self.prevL)
+            self.chain.append(GeekCoinBlock(f.get("prev"), f.get("data"), False))
+        
+            
+        
         print(self.chain) 
         
             
