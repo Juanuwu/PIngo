@@ -5,6 +5,7 @@ import './style.css';
 import axios from "axios";
 import Draggable from "react-draggable";
 const MyApp = {};
+require('dotenv').config()
 var width = window.innerWidth;
 
 
